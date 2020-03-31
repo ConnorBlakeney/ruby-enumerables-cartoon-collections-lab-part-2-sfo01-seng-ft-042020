@@ -22,5 +22,5 @@ def find_valid_calls(planeteer_calls)
   # Return the first valid call found, or return nil if no valid calls are found
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   
-  planeteer_calls.find { |x| x }
+  planeteer_calls.find { |x| valid_calls.include?(x) }
 end
